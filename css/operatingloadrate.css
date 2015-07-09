@@ -1,0 +1,248 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.main_box{
+    min-width: 1000px;
+    margin: 0px auto;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    background-color: #333438;
+}
+.top_content{
+    padding: 5px;
+    background-color: #404447;
+    /*-webkit-box-flex: 1;*/
+    /*margin: 10px;*/
+    /*margin-right:5px;*/
+    display: -webkit-box;
+}
+.top_content_left{
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+.top_content_center{
+    padding-top: 10px;
+    color: #00afcd;
+    -webkit-box-flex: 1;
+}
+.top_content_right{
+    display: -webkit-box;
+    /*-webkit-box-flex: 1;*/
+}
+
+.button_content{
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+.button_content_left{
+    display: -webkit-box;
+    margin: 10px;
+    -webkit-box-orient: vertical;
+    width: 1100px;
+}
+.button_content_right{
+    margin: 10px;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    position: relative;
+    -webkit-box-orient: vertical;
+}
+.buttonimage{
+    border-radius: 3px;
+    width: 40px;
+    height: 30px;
+    background-color: #00151a;
+}
+.divtext{
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 13px;
+    color:#00afcd ;
+    background-color: #162528;
+}
+
+#divcontent{
+    border-radius: 5px;
+    display: -webkit-box;
+    /*-webkit-box-flex: 1;*/
+    background-color: #1b1b1b;
+}
+.datatime{
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+
+.divleft{
+    border-radius: 3px;
+    padding-top: 6px;
+}
+.divcenter{
+    padding-top: 6px;
+    padding-left: 3px;
+    border-radius: 3px;
+    /*background-color: #383733;*/
+}
+
+.divright{
+    text-align: center;
+    width: 130px;
+    padding-top: 6px;
+    color: #00afcd;
+    border-radius: 13px;
+    background-color: #213035;
+}
+.checked{
+    color: #00afcd;
+    background: #383733;
+}
+
+
+
+/*start 右菜单样式*/
+
+
+#header {
+    /*position: absolute;*/
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #3f3f3f;
+    padding: 0;
+    color: #eee;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    bottom: 48px;
+    left: 0;
+    width: 10%;
+    background: #ccc;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    height: 520px;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    overflow-y: auto;
+}
+
+#scroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#scroller li {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #b4b4b4;
+    border-top: 1px solid #b4b4b4;
+    background-color: #3f3f3f;
+    font-size: 14px;
+}
+/*end 右菜单样式*/
+
+
+
+
+/*start 时间轴拖动样式*/
+.TimePanelSty
+{
+    width:100%; height:85px; line-height:85px;margin-top: 30px;}
+.mainbarsty
+{
+    height:85px;
+    line-height: 85px;
+    background-image:url(../img/Pg0slider.png);float: left;
+}
+.PointPanelsty
+{
+    position: absolute;
+    width:600px;
+    height: 85px;
+    line-height: 85px;
+    background-image:url(../img/Pg0timpanelbg.png);
+    background-repeat:repeat-x;
+    cursor: pointer;
+    z-index: 1;
+}
+.StartPointsty
+{
+    width:18px;
+    height: 85px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    /*background-image:url(../img/Pg0timsplitbg.png)*/
+}
+.EndPointsty
+{
+    width:18px;
+    height: 85px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    /*background-image:url(../img/Pg0timsplitbg.png);*/
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+.startbg
+{
+    width:5px; height: 85px; font-size: 0px;
+    /*background-image: url(../img/Pg0Timleft.png); */
+    float: left;}
+.endbg
+{
+    width:5px; height: 85px; font-size: 0px;
+    /*background-image: url(../img/Pg0Timleft.png); */
+    float: left; -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;}
+/*end 时间轴拖动样式*/
+
+
+.liback{
+    background-image: url("../img/MenuSelectedBg.png");
+    width: 220px;
+}
